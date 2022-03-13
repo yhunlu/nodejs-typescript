@@ -5,11 +5,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
-const a: number = 5;
-const b: number = 2;
+const a: string = "welcome";
+const b: string = "typescript";
 
 app.get('/', (req:any ,res:any ) => {
-  res.send(`1 + 2 = ${a + b}`);
+  res.send(`${a} to ${b}`);
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
